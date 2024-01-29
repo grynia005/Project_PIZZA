@@ -31,9 +31,13 @@ const cartSlice = createSlice({
         item.price = item.price - payload.unitPrice;
       }
     },
+    clearCart: (state) => {
+      state.items = [];
+    },
   },
 });
 
-const { addToCart, deleteFromCart, decrementQtyPizza } = cartSlice.actions;
+const { addToCart, deleteFromCart, decrementQtyPizza, clearCart } =
+  cartSlice.actions;
 const cartReducer = cartSlice.reducer;
-export { addToCart, deleteFromCart, decrementQtyPizza, cartReducer };
+export { addToCart, deleteFromCart, decrementQtyPizza, clearCart, cartReducer };
