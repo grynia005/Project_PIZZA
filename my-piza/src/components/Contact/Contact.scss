@@ -1,0 +1,14 @@
+@import "../../var/variables.scss";
+
+.contacts {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  svg {
+    fill: $white_sil;
+    width: auto;
+    height: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+.pizza_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pizza_title {
+  span {
+    margin-right: 10px;
+  }
+}

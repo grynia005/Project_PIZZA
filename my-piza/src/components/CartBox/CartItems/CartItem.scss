@@ -1,0 +1,20 @@
+.cart_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
