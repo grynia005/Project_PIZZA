@@ -1,0 +1,30 @@
+.form_order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  div {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      width: 500px;
+    }
+  }
+  button {
+    color: rgb(255, 123, 0);
+    background-color: rgba(48, 23, 0, 0.199);
+    border-color: rgb(255, 123, 0);
+  }
+
+  button:hover,
+  button:hover + span {
+    color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+  }
+  .submit_box {
+    width: 400px;
+  }
+}

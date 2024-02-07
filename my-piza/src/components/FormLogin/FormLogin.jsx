@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Input } from "../Input/Input";
-import { loginUser } from "../../redux/User";
+import { loginUser } from "../../redux/slice/userSlice";
 import { Button } from "../Button/Button";
 import { useState } from "react";
 

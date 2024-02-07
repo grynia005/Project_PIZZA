@@ -5,7 +5,7 @@ import {
   addToCart,
   decrementQtyPizza,
   deleteFromCart,
-} from "../../../redux/cartSlice";
+} from "../../../redux/slice/cartSlice";
 
 const CartItem = ({ pizza }) => {
   const dispatch = useDispatch();

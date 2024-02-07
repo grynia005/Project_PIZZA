@@ -1,0 +1,21 @@
+.order_button {
+  background-color: rgba(60, 109, 31, 0.555);
+}
+.order_button:hover {
+  color: rgb(0, 255, 0);
+  border-color: rgb(0, 255, 0);
+}
+
+.clear_cart_button {
+  background-color: rgba(114, 49, 49, 0.342);
+}
+
+.clear_cart_button:hover {
+  color: rgb(255, 39, 39);
+  border-color: rgb(255, 39, 39);
+}
+.cart_list_pizza {
+  li {
+    border-bottom: 1px solid orangered;
+  }
+}

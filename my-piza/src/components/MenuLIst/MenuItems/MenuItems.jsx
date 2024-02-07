@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import "./MenuItems.scss";
-import { addToCart } from "../../../redux/cartSlice";
+import { addToCart } from "../../../redux/slice/cartSlice";
 
 const MenuItems = ({ pizza }) => {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const MenuItems = ({ pizza }) => {
   ));
 
   const handleAddToCart = () => {
-    dispatch(addToCart(pizza))
+    dispatch(addToCart(pizza));
   };
   return (
     <>

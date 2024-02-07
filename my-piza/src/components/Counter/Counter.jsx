@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./Counter.scss";
 import { LiaSmileWinkSolid } from "react-icons/lia";
-import { increment, decrement, defaultValue } from "../../redux/countSlice";
+import { increment, decrement, defaultValue } from "../../redux/slice/countSlice";
 
 function CounterPizza() {
   const count = useSelector((state) => state.counter);

@@ -1,7 +1,7 @@
 import "./Button.scss";
-function Button({ call, type, title = "click" }) {
+function Button({ className, call, type, title = "click" }) {
   return (
-    <button onClick={call} type={type}>
+    <button className={className} onClick={call} type={type}>
       {title}
     </button>
   );
