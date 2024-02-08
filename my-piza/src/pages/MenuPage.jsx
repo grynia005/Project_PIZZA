@@ -9,4 +9,4 @@ const MenuPage = () => {
   );
 };
 
-export { MenuPage };
+export default MenuPage;

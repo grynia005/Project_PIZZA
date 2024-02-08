@@ -45,8 +45,11 @@ const cartSlice = createSlice({
     selectPriority: (state, { payload }) => {
       if (payload) {
         state.totalPrice = state.totalPrice + 8;
+        state.priority = true;
       } else {
         state.totalPrice = state.totalPrice - 8;
+        state.priority = false;
+
       }
     },
   },

@@ -4,25 +4,21 @@ import { Input } from "../Input/Input";
 import "./FormOrder.scss";
 import { Button } from "../Button/Button";
 import { selectPriority } from "../../redux/slice/cartSlice";
-import { schema } from "../../validation/validation";
+import { schema } from "../../validation/validationOrder";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const FormOrder = () => {
   const customerName = useSelector((state) => state.user.login);
   const { totalPrice, priority } = useSelector((state) => state.cart);
+
   const dispatch = useDispatch();
 
-  const {
-    control,
-    handleSubmit,
-     errors,
-    reset,
-  } = useForm({
+  const { control, handleSubmit, errors, reset } = useForm({
     defaultValues: {
       name: customerName,
       phone: "",
       address: "",
-      priority
+      priority: priority,
     },
     resolver: yupResolver(schema),
     mode: "onBlur",
@@ -33,7 +29,6 @@ const FormOrder = () => {
     reset();
   };
 
-  const handleOrderPizza = () => {};
   const handlePriority = (event) => {
     const prior = event.target.checked;
     dispatch(selectPriority(prior));

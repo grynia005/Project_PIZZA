@@ -6,7 +6,7 @@ const Input = (props) => {
   const { type, placeholder, id, handlePriority } = props;
 
   const onChangeHandlePriority = () => {
-    field.onChange(); 
+    field.onChange();
     handlePriority();
   };
   const onChangeHandler =

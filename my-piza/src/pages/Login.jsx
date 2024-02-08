@@ -8,4 +8,4 @@ const LoginPage = () => {
     </Container>
   );
 };
-export { LoginPage };
+export default LoginPage;
